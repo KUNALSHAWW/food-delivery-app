@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start_activity">
+
+    <ImageView
+        android:id="@+id/burger"
+        android:layout_width="289dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="100dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backkground_start_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonnext"
+        android:layout_width="157dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/greenbutton"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design By \n KUNAL"
+        android:textAlignment="center"
+        android:textColor="@color/green_color_design"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonnext"
+        app:layout_constraintVertical_bias="0.495"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/Enjoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoy meals at your home"
+        android:textColor="@color/green_color_design"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonnext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/burger"
+        app:layout_constraintVertical_bias="0.482" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
